@@ -1,0 +1,525 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+\documentclass[12pt]{book} % use larger type; default would be 10pt
+
+\usepackage{amssymb}
+\usepackage{fontspec} % Font selection for XeLaTeX; see fontspec.pdf for documentation
+\defaultfontfeatures{Mapping=tex-text} % to support TeX conventions like ``---''
+\usepackage{xunicode} % Unicode support for LaTeX character names (accents, European chars, etc)
+\usepackage{xltxtra} % Extra customizations for XeLaTeX
+
+%\setmainfont[Numbers=OldStyle]{CJunicode} % set the main body font (\textrm), assumes Charis SIL is installed
+ \setmainfont[Numbers=OldStyle]{Charis SIL} % set the main body font (\textrm),
+%\setsansfont{Deja Vu Sans}
+%\setmonofont{Deja Vu Mono}
+
+\usepackage{scalefnt}
+\newcommand{\mathipa}[1]{\textrm{\scalefont{1.08}\selectfont #1}} % scaled to 1.1 also seems ok
+\AtBeginDocument{
+	\setlength\abovedisplayskip{0pt}
+	\setlength\abovedisplayshortskip{0pt}
+	\setlength\belowdisplayskip{0pt}
+	\setlength\belowdisplayshortskip{0pt}
+}
+
+
+% other LaTeX packages.....
+\usepackage{geometry}
+\geometry{letterpaper} % or a4paper (US) or a5paper or....
+%\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+\usepackage{multicol}
+
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{rotating}
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{tikz}
+
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{Gray}{gray}{0.9}
+\newcolumntype{a}{>{\columncolor{Gray}}c}
+
+
+\usepackage{qtree}
+\usepackage{mathtools}
+
+
+
+
+\title{Codename Čtyři \\ {\Large Draft Grammar}}
+\author{Okuno Zankoku}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+
+
+
+
+\chapter{Introduction}
+
+Color usage: {\color{orange}draft}, {\color{red}open questions/problems/to-do}, {\color{cyan}revise}, {\color{green} author notes}
+
+
+
+
+
+\chapter{Phonology}
+
+\section{Phoneme Inventory}
+??? has a moderately small phoneme inventory: 13 consonants, 3 glides, and 4 vowels totalling 20 phonemes and a 4:1 consonant-vowel ratio.
+It makes an aspiration distinction in the plosives, but otherwise no distinctions other than place and manner of articulation.
+
+Of interst is the low glide /ɰ̠/, which is not widely attested in other languages.
+It appears to be part of a system of vowel-glide associations where the vowels /i, u, ɔ/ and the glides /j, w, ɰ̠/ share place of articulation, respectively; this hypothesis is supported by timing data and phonological rules.
+
+\begin{figure}[H]
+\centering
+	\begin{tabular}{cccccc}
+	Nasals		&	m	& n		& ŋ 			\\
+	Plosives		&	pʰ p	& tʰ t	& kʰ 		\\
+	Fricatives	&	v	& z		& x	&	& h	\\
+	Rhotic		&	  	& r					\\
+	Glides		&	  	& j		& w	& ɰ̠		\\
+	Close Vowels	&	  	& i		& u	& ɔ		\\
+	Open Vowel	& 	  	&		& a	&		\\
+	\end{tabular}
+\caption{Phoneme Intentory}\label{t:phonemes}
+\end{figure}
+
+There is a notable gap where there is no distinction between /kʰ, k/.
+This is the result of a historical chain shift /k/ > /x/ > /h/.
+This means that /x/ tends not to pattern with the other fricatives /v, z/, and it is for this reason that we have spelled the fricatives as two voiced, one unvoiced.
+Indeed, it also means that /h/ sometimes will pattern as a fricative, such as its ability to appear in syllable codas.
+
+\subsection{The Low Glide}
+As /ɰ̠/ is quite rare (enough so as to not get its own position in the official IPA chart), we don't expect the reader to have already mastered its production.
+We refer the interested reader to the excellent article by Martine Mazaudon, \textit{A low glide in Marphali}, for additional analysis of this class of speech sounds.
+For the purposes of continuing with our grammar, we wil give a breif description of /ɰ̠/ here.
+
+/ɰ̠/ is an unrounded velar approximant which (like the pairs /i,j/, /u,w/, and /y,ɥ/) corresponds to the vowel /ʌ/.
+In fact, Mazaudon spells the Marphali low glide as /ʌ̯/; while this spelling is perfectly acceptable, we have chosen /ɰ̠/ (retracted velar approximant) to emphasize the consonantal nature of the glide, just as /j,w/ are clearly consonants.
+Indeed the timing of /ɰ̠/ is identical to that of /j,w/, and native speakers are not able to sustain this phoneme without recognizing it as [ɔːːː] (note that [ɔ\textasciitilde{}ʌ]).
+
+\section{Phonotactics}
+
+In roots, syllable structure is C(G)V(N/h).
+That is, the minimal syllable is CV, but there may be a glide (/j,w,ɰ̠/) in-between, and there may be a nasal (/m,n,ŋ/) or /h/ in the coda.
+Two glides may not appear next to each other.
+/ŋ/ may appear in the onset, including word-initially.
+
+Coda-/h/ do not appear at the end of native words, though they are allowed in borrowings. {\color{cyan}Let's say there was a vowel deletion after coda fricative, and later coda fricative debuccalized.
+This story makes it possible to have some historical fricative fully reassert themselves once suffices are added, bringing some irregularity.}
+
+{\color{cyan}
+Consonants in the coda can be dramatically affected by phonological and mophophonological rules, so they often to not manifest as this phonemic analysis would suggest.
+}
+
+{\color{red}
+What happens is a morpheme adds a vowel in such a way that a syllable would contain two vowels?
+I've written epenthetic glide in my notes, but that seems not fusional enough for me.
+However, there might not be a way to always alter the initial vowel to a glide.
+In any case, I'll need to pay serious attention to these rules.
+}
+
+
+\section{Prosody}
+
+\subsection{Syllabification}
+
+{\color{cyan}
+When two vowels appear next to each other, they are part of the same syllable, but they are never diphthongs (triphthongs, etc.). Instead, vowels are pronounced separately.
+If three vowels occur next to each other {\color{red}(this should only happen rarely, if at all)}, glottal stops are inserted to ensure that the largest sequence of consecutive vowels is two{\color{red}(where?)}.
+}
+
+\subsection{Word Stress}
+
+??? has both primary and secondary stress patterns.
+Primary stress is distinguished by lengthening of the vowel and a step up in pitch.
+Pitch in the word trends down until the primary stress, though secondary stress is also marked by a higher pitch.
+
+Primary stress is determined by the final morpheme, and may occur on the ult or penult.
+Even suffixes of less than two syllables can cause stress to fall on the penult.
+In a few cases, the final morpheme does not determine primary stress, but instead it passes on the determination to the previous morpheme; this only occurs in small morphemes.
+
+Secondary stress is iambic and counted from the left (the second and the every other syllable has secondary stress) up to the primary stressed syllable.
+Secondary stress cannot occur on syllables adjacent to the primary stress; where the counting rules would cause this to occur, that syllable is not stressed at all.
+\begin{center}
+ˌσ > σ / \_ˈσ
+\end{center}
+Therefore, most feet are two syllables long, but there are occaisionally three syllable feet.
+Since the primary stress is always on the ultima or penult, there is no secondary stress after the primary stress.
+
+
+
+
+
+\section{Allophony} 
+
+\subsection{Free Variation}
+{\color{cyan}
+Here's a table about what timbres will be recognized as identical in isolation.
+It does not include allophony which is recognizably conditioned.
+{\color{red} make a description of ʕ̞}
+}
+\begin{figure}[H]
+\centering
+\begin{subtable}[t]{0.5\linewidth}
+	\centering
+	\begin{tabular}{rc}
+	i	& i,ɪ,e		\\
+	u	& u,o		\\
+	a	& a,ə,ɜ		\\
+	ʌ 	& ʌ,ɔ,ɑ,ɒ		\\
+	\end{tabular}
+	\caption{Vowel Ranges}
+\end{subtable}
+\hskip -6em
+\begin{subtable}[t]{0.5\linewidth}
+	\centering
+	\begin{tabular}{rc}
+	r	& r,ɾ	\\
+	kʰ	& kʰ,k	\\
+	ɰ̠	& ɰ̠, ʕ̞	\\
+	x	& x, ɣ	\\
+	\end{tabular}
+	\caption{Consonant Ranges}
+\end{subtable}
+\caption{Unconditioned Allophones}
+\end{figure}
+
+{\color{red} CHANGE: /a/ > [ɛ] / j\_, \_j}
+
+\subsection{Glide-Induced Alternations}
+
+Glides affect coronal fricatives as is quite common.
+It is not noted here, but whereas normally the resulting ʒ is laminal [ʒ̻\{j,w\}], is is pronounced apically before the low glide [ʒ̺ɰ̠], simply because the low glide pulls the tounge so much further back.
+\begin{center}
+	/z/ > [ʒ] / \_G \\
+\end{center}
+Note that, although we have written these rules using letters that specify for voice, these phonemes are sometimes realized devoiced (see below), and the rules apply equally well regardless.
+
+The low glide, being homorganic with uvulars, causes backing of velars.
+Where this backing occurs, the glide can then drop, but its presence or absence is in free variation here.
+\begin{center}
+	C\{+velar\} > C\{+uvular\} / \_ɰ̠ \\
+
+	ɰ̠\textasciitilde{}$\varnothing$ / \{+uvular\}\_
+\end{center}
+E.g. /ŋɰ̠/ > [ɴɰ̠\textasciitilde{}ɴ].
+
+Normally, /i,u,ʌ/ are in free variation with a number of vowel phones, but after their homorganic glide, they are forced to dissimilate.
+Further, 
+\begin{center}
+	/i,u,ʌ/ > [e,o,ɤ] / \{j,w,ɰ̠\}\_
+\end{center}
+
+\subsection{Coda-/N/ Alternations}
+
+At their most basic level, coda nasals are typically homorganic with the following consonant.
+\begin{center}
+	N > N\{$\alpha$-place\} / \_.C\{$\alpha$-place\}
+\end{center}
+For glides, the homorganic sequences are /nj, mw, ŋɰ̠/, though note that /ɰ̠/ tends to turn velars into uvulars, {\color{orange}see below}.
+At the end of words and before /h/, any nasal is allowed.
+At the end of a word, the nasals are in free variation; {\color{red}before /h/, the particular nasal is determined lexically (see below about h > F / \_N)}.
+There are, however, some contexts in which another rule overrides this simple assimilation rule; the rest of this section is devoted to these exceptions.
+
+Because /h/ was historically one of several oral fricatives, affixes that begin in /h/ can have a morphophonological effect on a preceding coda nasal.
+Affixes starting with /h/ will force a preceding coda nasal to a particular nasal, determined by the affix, at which point there is no longer free variation as there would be on the stem.
+
+{\color{cyan}
+um, write some text here
+\begin{center}
+	/N.r/ > [n.d] \\
+\end{center}
+}
+
+The final, and most unusual, exception for coda nasals is a morphophonological rule whereby nasal-plosive clusters become affricates.
+Historically, coda-nasals adjoined to plosives would become gemminate plosives, and gemminate plosives would lenit to affricates */N.C\{+plosive\}/ > [C.C] > [.C͜F].
+Today, the gemmination rule for plosives is no longer productive, and so the path to affricates is blocked in modern compounds and inflections
+\begin{center}
+	/N-C\{+plosive\}/ > [C͜F] / for several grammatical affixes \\
+	where C͜F is one of [p͡f, t͜s, t͡ʃ] where C was /p(ʰ), t(ʰ), kʰ/ initially
+\end{center}
+Although it is not represented in the transcription, the affricate is pronounced with the same timing as the gemminate consonant would be.
+{\color{red}Nasalize prior vowel probably makes sense?}
+
+\subsection{Alternations of /h/ }
+
+Coda-h is a reflex of historical coda-fricatives, but before plosives and fricatives, dubuccalization was blocked.
+
+When next to a fricative or plosive, coda-h undergoes fortition to the homorganic fricative.
+Additionaly, due to the /k/~>~/x/~>~/h/ chain shift, there is a morphononological rule on some words whereby a coda-h can strengthen a following /h/ to /x/, at which point the coda-h fortition rule takes over.
+\begin{center}
+	/h/ > [F] / \_\{pʰ,tʰ,kʰ,p,t,x\} \\
+	/h/ > [F] / \_.F \\
+	/h-h/ > [x-x] / for some morphemes beginning in /h/
+\end{center}
+The fortition rules have been generalized and are now fully productive, even in newly-formed words.
+
+
+{\color{red}
+{\color{green} Using [ʀ] I think would conflict articutorially with the low glide.}
+Coda-h followed suit [with coda-N], so that the modern rule is
+\begin{center}
+	/h.r/ > [h.ʀ]
+\end{center}
+Again, [ʀ] is never produced as *[ʁ,ɣ].
+}
+
+{\color{cyan}
+h after nasal becomes a fricative
+}
+
+\subsection{Phonation Alternations}
+
+Voiced fricatives become unvoiced when they are not supported by a preceding vowel.
+Because of phonotactic restrictions, this means that fricative devoicing only occurs at the begining of words and after coda-h (though we have already factored this process into the coda-h rules above).
+\begin{center}
+/v,z/ > [f,s] / \{\#,C\}\_
+\end{center}
+This could be analyzed as unvoiced fricatives become voiced by a preceding vowel: /f,s/~>~[v,z]~/~V\_.
+We opted for the former analysis because the latter would fail to explain why /x/ does not also become voiced.
+
+Unsurprisingly, coda-h devoices following glides.
+\begin{center}
+	G > G̥ / h\_
+\end{center}
+
+
+
+
+
+\section{Romanization}
+
+The romanization of ??? used in this document is a phonetic transcription.
+The default spelling of each phoneme is given in Figure \ref{t:phoneme-spelling}, following the chart in Figure \ref{t:phonemes} .
+The system does include some digraphs, but they only appear in unambiguous places once phonotactic restrictions are accounted for.
+
+\begin{figure}[H]
+\centering
+	\begin{tabular}{cccccc}
+	Nasals		&	m	& n		& ng 			\\
+	Plosives		&	p b	& t d	& k 		\\
+	Fricatives	&	v	& z		& x	&	& h	\\
+	Rhotic		&	  	& r					\\
+	Glides		&	  	& j		& w	& y		\\
+	Close Vowels	&	  	& i		& u	& o		\\
+	Open Vowel	& 	  	&		& a	&		\\
+	\end{tabular}
+\caption{Default Romanization}\label{t:phoneme-spelling}
+\end{figure}
+
+Where the phonetics motivates it, phonemes may be romanized differently.
+A list of these situations is given in Figure \ref{t:phonetic-spelling}.
+Where free variation might motivate a change in spelling, this is not normally noted, though obviously a translator might use them when the original author has indicated the use of a colloquial dialect.
+Where all nasals are in free variation with each other (e.g. at the end of a word) the default spelling is «n».
+
+\begin{figure}[H]
+\begin{itemize}
+\item Fricative devoicing is noted: /v,z/ > [f,s] $\Rightarrow$ «v,z» > «f, s».
+\item Palatalization is noted: «zj, sj» > «zh, sh».
+\item Vowel dissimilations are noted: «a» > «e» near /j/; «i,o,u» > «ei,{\color{orange}ou,oa}» near homorganic glide.
+\item Backing by /ɰ̠/ is noted when convenient: «zy,sy» > «zhy,shy»; «ky» > «qy»
+\item Coda-h is spelled according to its phonetics: «h,f,s,x»; dropped where affricates arise.
+\item Affricates are spelled out: «pf, ts, tch».
+\item{\color{orange}/N.r/ > «ngr»}
+\end{itemize}
+\caption{Phonetic Alternations of Romanization}\label{t:phonetic-spelling}
+\end{figure}
+
+% /ˈzjizji/ > [ˈʃiʒi] > «shízhi»
+
+Stress can also be notated in this romanization.
+Primary stress is indicated with an accute accent on that syllable's vowel.
+Secondary stress is marked with a grave accent on the vowel of (only) the first secondarily stressed syllable.
+Where there is a digraph vowel, the second cannonically takes the diacritic.
+Since stress is predictable with some knowledge of the dictionary, it isn't necessary to always mark stress, but because this grammar will support those who are not familiar with ???, we will always mark both stresses explicitly.
+
+
+
+
+
+\chapter{Morphology}
+
+\section{Parts of Speech}
+
+\section{Verbal Morphology}
+
+{\color{red}
+So, there are some problems.
+\begin{itemize}
+\item -tcharó after consonants (i.e. -ax)
+\item oras- without add'l prefix
+\item note about v- on words that already have a consonant: {\color{orange}if follwed by glide, no change; if followed by s- plural person agreement, drop the agreement; otherwise epenthetic vowel duplicates the next vowel}
+\item secondary stress should never land on first syllable
+\end{itemize}
+}
+
+Verbs in ??? are highly inflected.
+Core inflections have fixed positions, but other inflections are allowed some flexibility in where they occur.
+The stem comprised most of the obligatory inflections:
+\begin{center}
+	conjunct aspect - person reflex - root - tense/aspect
+\end{center}
+Additional inflections {\color{red}mostly} occur after the stem, and are not overtly marked in the most common cases.
+The exceptions are a fused definiteness agreement and switch reference inflection, as well as person agreement in motion verbs, both of which are obligatory and appear at the end of the verb.
+
+\subsection{Person Reflex}
+
+Pre-??? had a full set of person agreement prefixes, including a clusivity distinction, but these have since almost entirely eroded.
+What is left in modern ??? is mostly number agreement with the subject.
+In the singular, verbs begin with one of a few onsets {\color{red} (which ones? are there some rare ones in there?)}, but in other inflections, this onset is replaced.
+
+There are two instances where the person reflex is more complex than simple number agreement.
+In the first-person plural inclusive, a different prefix is used.
+With certain additional prefixes, the first-person singular takes an alternate form, -or-.
+In all these cases, the verb's default onset is replaced.
+
+\begin{figure}[H]
+\centering
+	\begin{tabular}{rccl}
+				& Singular	& Plural				\\
+	1st Person	& ω-, -or-	& s-		& exclusive	\\
+				&			& oras-	& inclusive	\\
+	2nd Person	& ω-		& s-					\\
+	3rd Person	& ω-		& s-					\\
+	\end{tabular}
+\caption{Phoneme Intentory}\label{t:phonemes}
+\end{figure}
+
+{\color{cyan}
+Historically, s- is a reflex of a plurality marker had fused with person agreement.
+The oras- prefix is a combination of historical first-person singular (or-) with second-person plural (which contained as-).
+}
+
+\subsection{Tense and Aspect}
+
+??? can mark for three tenses (past, present, future) and two main aspects (perfective, imperfective) with suffixes on the verb.
+These suffixes are fused insofar as the set of tense suffixes varies between the aspects.
+In addition, there are two ``conjunctive'' aspects (anterior and simultaneous) which can be marked in addition to perfective marking using a prefix.
+
+\subsubsection{Perfective  Tenses}
+
+Perfective verbs were historically zero-inflected.
+Therefore, they take the plain (non-fused) tense markings.
+{\color{orange}In some verb forms{\color{red}(which? things that move through non-finite forms?)}, these markings are used elsewhere, but there they do not carry the perfective meaning.}
+
+\begin{figure}[H]
+\centering
+	\begin{tabular}{rc}
+		Present	& -$\varnothing$	\\
+		Past		& -ax	\\
+		Future	& v- -i	\\
+	\end{tabular}
+\caption{Plain Tense Markings}\label{t:plain-tense}
+\end{figure}
+
+The future tense is slightly different from the others in that it uses a prefix on the stem in addition to the suffix.
+Historically, this prefix appeared before the person/number agreement, but has since fused in most cases.
+When the root onset is still intact, this v- prefix replaces it; when it comes in contact with the s- plural agreement prefix, the resulting fused prefix is sw-.
+Only in first-person singular and inclusive plural does the v- future prefix remain in front.
+Note that the alternate first-person singular prefix -or- is used with v-.
+
+
+\subsubsection{Imperfective Tenses}
+
+{\color{orange}
+So perhaps imperfect should be fused with tense, or alter tense entirely.
+Perhaps the future tense isn't marked in the imperfective?, or at least it's only marked by the prefix.
+}
+
+{\color{red}I really like how the -ax past tense has totally swallowed up the imperfect marker, leaving just a residue of rounding and velarness.
+I think a lot more of the imperfect should be present in the non-past.
+}
+
+\begin{figure}[H]
+\centering
+	\begin{tabular}{rc}
+		Present	& -wu(r)		\\
+		Past		&  -(a/ó)xw	\\
+		Future	& v- -wu(r)	\\
+	\end{tabular}
+\caption{Imperfective Tense Markings}\label{t:imperfective-tense}
+\end{figure}
+
+{\color{cyan}
+in -(a/ó)xw, -axw is used if stress does not fall on the a, but -óxw is used of stress does fall on the o.
+
+-óxw always rounds the o
+
+in -wu(r), if the following suffix has no consonant to tack on, then the default consonant will be w {\color{red}[isn't this implied by glieds being epenthetic? have I written down that rule?]}
+}
+
+\subsubsection{Conjunctive Aspects}
+
+??? has two aspects, anterior and simultaneous, that are derived from historical conjuncts.
+These aspects are marked by prefixes on otherwise perfective verbs.
+Because they are one of the later parts of the verb to grammaticalize, these prefixes appear before any agreement reflexes and the future tense prefix.
+
+{\color{orange}
+mo- is for anterior and does not replace initial consonant in root.
+}
+
+{\color{cyan}
+In cases where a clause has two or more verbs, the one without anterior/simultaneous marking sets the stage, and the anterior/simultaneous verbs are relative to it.
+There are also uses of these aspects where only one verb appears in the clause.
+{\color{orange}
+Anterior, without another verb in the clause, means discontinuous (was the case in past, but not now; is the case, but won't be) or interrupted.
+Simultaneous, used without another verb in the clause, can be progressive or stative (depending on the verb).
+}
+}
+
+{\color{green}
+There are definitely pure aspectual uses of anterior/simultaneous, but they derive from conjunctions, so they should probably violate the universal that aspect appears closer than agreement, and therefore be even before the plural reflex. In that case, they serve as a good boundary between stem and further morphology.
+}
+
+\subsection{Definiteness and Switch Reference}
+
+The {\color{red}only (really?)} obligatory markings outside of the stem are definiteness agreement and switch reference.
+These appear at the end of the verb and are fused together.
+Because this is the last morpheme, we have noted how these markings affect stress.
+
+\begin{figure}[H]
+\centering
+	\begin{tabular}{rc}
+		Definite, Non-alternate Reference	& -◌́(ts)u		\\
+		Definite, Alternate Reference		& -tcharó		\\
+		Indefinite						& -ízu/-◌́zu	\\
+	\end{tabular}
+\caption{Agreement Markings}\label{t:agreement}
+\end{figure}
+
+
+{\color{green}
+definite: -N; indefinite: -si;
+topic: -du; subject: -karo
+\begin{itemize}
+\item definite+same: -N-du > -d-du > -◌́(ts)u
+\item definite+alternate: -N-karo >-k-karo >-tcharó
+\item indefinite: -si-du > -ízu/-◌́zu\
+\end{itemize}
+}
+
+
+
+
+\subsection{Floating Negation}
+{\color{orange}
+Depending on where a negative particle appears in the verb, various things get negated.
+A subtle one might be: when a simultaneous verb gets a negation in a particular spot, it has the meaning ``despite''.
+}
+
+ 
+
+
+\end{document}

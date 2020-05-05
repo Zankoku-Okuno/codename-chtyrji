@@ -1,0 +1,14 @@
+All verbs mark for definiteness, and this is an old feature.
+The lang used to be topic-comment; the verb marked to distinguish topic from subject cases.
+    This marking is kinda "let's keep the topic rolling" vs. "surprise, we're talking about something different now"
+Thanks to the specific semantics of the topic/subject marking, there was a restriction that only definite nouns could be the subject.
+Definiteness and topic/comment were independent morphologically.
+Finally, motion verbs also took person markings showing the reference frame for the motion.
+
+A politeness strategy develops in motion verb person markings, which leads to ergative person marking in motion verbs.
+Definiteness and topic/subject marking fuse and topic/subject distinction becomes switch reference as the topic-comment tendency morphs into subject-verb.
+At the same time, more quantifiers get grammaticalized for plurals.
+
+
+def-topic, def-subject, indef-topic, *indef-subject
+def.same, def.alt, indef

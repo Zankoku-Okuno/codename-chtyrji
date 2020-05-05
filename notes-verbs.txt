@@ -1,0 +1,54 @@
+1, 2, 3.def-topic, 3.def-sub, 3.indef-topic, *3.indef-topic (only definite nouns can be the subject)
+this later turns into
+1, 2, 3.same_referent, 3.alt_referent, 3.indefinite
+    replacement of topic-comment structure with subject-object
+how much person marking do I want?
+    in light of archaic agreement reflexes, perhaps no person marking, only definiteness?
+    OTOH, perhaps the archaic reflexes are partially-incorporated pronouns and these person markers are older; the lang gave up on the pronouns, but there's still a trace left
+    oh, full person marking is for motion verbs only anyway
+on non-motion verbs:
+    def.sameref, def.altref, indef
+
+
+TODO:
+    definiteness [agreement] (and possibly also quantifiers)
+    ergative person agreement (motion verbs only)
+        the idea here is that motion verbs always took a direction, and that direction was inflected for person (the person of the thing that the motion is referenced against)
+        rather than mix things up a lot, the reference person was always the subject for intransitive, but always the object for transitive (which is a politeness strategy, as that tended to put the reference in the listener's frame, or a more objective frame)
+        The person marking for the preposition would be marked on the verb, but as politeness shifted everything, it got re-interpreted as a plain verbal person marker
+        Therefore, no preposition would need to escape or grammaticalize into the verb
+    archaic person reflex
+    tense
+    valency operations
+    (all combined): telicity (should there be a derivation of "to death"? like Volapük), evidentiality, mirativity, mood, degree (e.g. intensive, attenuative, durative)
+    relativizer/participle marking
+    adverbs, limited noun incorporation?, advanced tenses and aspects (hodernial &c; frequentive, iterative, &c)
+    polarity?
+    being a question is marked on the verb
+could be lexical, inflection, non-configurational/concatenative inflection, clitic, or just peripheral, marked on other words, or word-order derived
+Core-most inflections are:
+    definiteness agreement, archaic person reflex, tense?, aspect
+
+aspect
+    anterior (just Ved/Ving; V before (V_2))
+        can be used to chain actions in time sequentially
+        without another verb in the clause, means discontinuous (was the case in past, but not now; is the case, but won't be) or interrupted
+    simultaneous (while V)
+        used without another verb in the clause, can be progressive or stative (depending on the verb)
+    imperfective
+    perfective (zero-marked)
+archaic person agreement reflexes
+    distinguishes plural from singular, but also distinguishes inclusive 1st person in the plural
+
+it seems that lexical aspect isn't really the perfective-imperfective sort; why?
+
+be sure to base some inflections on old words for e.g. to go, to have, &c
+
+some mirativity (esp. stand-alone (not fused with other stuff)) could be verbal clitics, but shown not to be sentence particles b/c they can appear in relative clauses
+
+If a language has different tense categories and shows a split between 1st versus 2nd/3rd person marking in one of these categories, it is most probably that this split will occur in the future tense. 
+
+
+adjectives can be used like nouns (or also like verbs?)
+relative case can be used as a simulative ("like X", and I getting the name right?)
+for possesion constructions, but a relative (simulative) on the possesum and also a person marker that agrees with the posessor

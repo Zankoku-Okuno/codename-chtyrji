@@ -1,0 +1,176 @@
+===
+CHANGES
+
+I have to get affricates naturally from h.C and/or N.C; I don't think what I'm doing right now makes much sense, even though it does go through a gemminate phase first.
+    I think the NC > CC > C͜F rule is too much synchonically, but perhaps it'd work as a morphophonological rule
+    baN + ta = batsa, but the borrowing "fanta" is fine
+    coda-nasals are always homorganic with the following vowel, so that'll never be a problem
+    some morphemes might have a fossilized affricate anyway
+
+perhaps ŋ can only appear in the onset word-initially
+
+there's something up with how I'm pronouncing coda-h as fricative that leads me to think that the timings are interesting: perhaps a little breathiness on the vowel, or the fricative is preaspirated?
+
+===
+
+
+phonetic xcription is really handy considering /sjisji/ can now be spelled shizhi
+
+
+
+I may be being a bit too prissy with avoiding mergers
+though maybe that's fine in a smaller phoneme invetory; something at least to remember for larger inventories
+though, it seems (though it might just be me) that very large inventories just don't do much in the way of allophony at all
+
+
+I've decided against ejectives, as they feel tacked on.
+same for the front rounded glide and vowel
+
+When morphologically a syllable would start with a vowel, an epenthetic glide is inserted.
+
+There must have been uvular consonants earlier that mostly merged with velars, or disappeared, or something.
+The low glide stuck around and held adjacent consonants in place.
+
+
+Cheyenne has h > s / e_t, which is very cool.
+Any way I could get an s~h alternation?
+Probly: codas are allowed to be homorganic nasal (N) or h.
+The coda-h is a remanant of prior coda fricatives, and in some contexts a fricative re-asserts itself. Perhaps as s before t, and f before p. The coda-h would elide before nasals, and lengthen following fricatives.
+historically k > x > h, so k is gone now; also explains why I've got voiced fricatives except /x/
+potentially /x/ doesn't participate in intervocalic fricative voicing
+
+
+
+
+It's not an interesting bit of phonetics if it's not affected by or conditioned by any phonological rules.
+Or at least interesting enough to show up in a phonetic transcription.
+
+Use the assymetries in the phonology to drive the distribution of phonemes in contexts and open up irregularities once morphophonologically-motivated irregularities.
+
+if affixes affect the stress pattern, then it's not an agglutinating language (fusion can occur in suprasegmentals alone)
+
+-------------------
+
+
+
+mark the/a in the verb: verb agreement takes one of two forms based on whether the agreed-with noun is definite or indefinite
+switch reference starts to look nice, maybe
+
+if we're marking a bunch of prepositional cases, perhaps those are suffixional
+    it occurs to me that trigadesleng does some cool things with verb+preposition that I should look at for inspiration
+    heck, verbs of motion could have a different (probly also wider) set of grammaticalized prepositions, and those prepositions it shares with non-motion verbs might take on a different meaning
+otherwise, I'd like to keep case marking slim: just relative and absolutive
+    I might even repurpose them for possession marking, but if not, I think an independent case marking for possesion is good, and the order with the relative cases wouldn't matter
+though, a quirky dative might be cool
+
+
+these are isolated features that need to be integrated, especially think about what nouns do, since the more the verb takes on, likely the less the noun does
+    limited noun incorporation might be good
+        i.e. a small set of nouns that can be incorporated, usually very old nouns, that have metaphorized their semantics
+        e.g. use fire with in/out prepositions to add semantics about preparation
+        but why wouldn't this just look like derivational morphonology?
+        nouns for body parts are good candidates
+    evidentiality
+        (here are just some things I use a lot in English) my guess is, someone's guess is, I/someone was told, I/someone remember (but am aware of the fickleness of human memory), seems/appears, it can probably be inferred, one piece of direct evidence, definitely (many direct evidences)
+        and let these stack up so that "I heard that it seems to them that they_2 definitely know that"
+    polypersonal agreement
+        could take inspiration from Blackfoot's animacy restrictions
+        something like, add agreement affixes starting from the most amimate object in the order subject-object
+        I'd like to have something that means this will become voice
+        WARNING: in any case, limiting polypoersonal agreement (or disallowing) should allow nouns to shine through some more
+
+an infinitive with person agreement might have something to do with relative-clause-like constructions
+
+if personal agreement was marked largely by coda fricatives (or even other lost elements before that), then it might have disappeared, causing a new set of pronouns to be used, and then grammaticalize; perhaps there's even some relics of the old personal agreement markers
+
+the Lahu exampe in ch 8 of the zbb topic is interesting!
+
+remember to think about negation and quantifier scope
+
+I had never heard of specificity marking, so why not have nouns marked for it?
+alliterative agreement, wat?
+
+
+what about causitive-based derivations?:
+    to eat + caus = to feed
+    but what restrictions does that formation place on morphology?
+    perhaps the stem is always inflected for past perfective, but then another tense marking is added after the causative marker
+    two different causatives: one for states, and another for actions
+    so, you could "cause someone to become full" or "cause someone to eat"
+
+
+never settle for one-to-one
+    have one phrase have multiple meanings
+    multiple ways to say the same meaning
+    one inflection, multiple uses
+    multiple inflections for one meaning
+
+
+-----
+
+directions should be suitable for minecraft, though I'll use different terms to hide it
+primarily use to/from spawn (city center) and to/from base (home), then cardinal directions
+have "left/right in direction of travel", but with person affixes (so you can say your direction for people entering a plane, or our direction for facing the nose of the plane)
+in fact, person affixes on all directions might be a good idea
+for that matter, how about person affixes on verbs of motion/direction, but not on other verbs
+    I guess historically, there would have been possesives as a derterminer before the head noun
+if verbs of motion are getting roped into person marking, why?: probly there are/were some manner/gestural/positional affixes (and it'd be cool if they are/left behind suffixes)
+
+fire > fira > firaga
+but if firaga were actually in, wt'd be firaxa, and perhaps I'd want free variation x~ɣ
+
+
+English "Alaska" would be /harahkʼa/ [haraːkʼa]
+    assuming coda-h induces glottalization
+    also assuming the epenthetic consonant would be h
+    though, there might not be epenthetic consonant in loanwords, if that obligatory syllable-initial consonant rule is no longer productive
+sjisji(shizhi): dad/da-da (informal)
+tanği /taŋɰ̠i/ [taɴɰ̠ɪ]
+/ŋwutaN/ ngwodan, /ŋɰ̠utaN/ ngyudan
+
+counting system:
+    dozenal
+    rip off metric for large numbers (literally borrow the morphemes, b/c the lang actually did borrow them)
+    actually doing science (decimal metric) might need a separate set of (presumably borrowed) numbers
+
+Georgian example: xelebi ga-m-i-tsiv-d-a "My hands got cold"
+    xejebi
+
+"to meet" can be used for "welcome", and can be inflected for 1st.pl or 2nd.pl depending on whether the meeting is social or parasocial
+
+maybe I should stop fighting it and have verb roots start with a vowel then add prefixes
+
+/-ahtʰ-/ ("use" for consumables, transitive only (or with a dropped object?): i.e. eat, drink, light a candle/flare, shoot an arrow)
+
+<more?> - pl - aspect - root - tense - <more> - definite.switchref(.person)
+
+
+/jahtʰ-u/ jestu (I/you/he/she/it eats)
+v-oras-ast-i-tsu, voràsastítsu (we're about to eat if you want to join)
+mo?{ant}-jast-ax-u (I've eaten) mòjestáxu
+jestítsu (I am eating)
+jestóxwou [jɛsˈtʰɔːxʷo] (sgdef was eating)
+jestàxitcharó (the other one was eating)
+vorastutsu (sgdef will be eating)
+jestwoùtcharó (the other is eating)
+
+should the extra consonants vowels have a set rule, or should it be possible to use them all?
+    jestwoúzu
+    jestwourízu
+
+
+
+that inclusive marker could get used for a cohortative (let's ...)
+
+
+good evening: evening-meet(v.) + positive mirative
+essentially, incorporate the time of day into theverb to meet
+then conventionalize a particular inflectional form to mean that
+
+------
+
+when creating affixes (or non-concatenative morphology), be sure to have some be non-productive and therefore have more fossilized, metaphorical effects
+
+a thing in nooblangs seems to be that the lang has so much flexibility it'll fall apart
+
+It's a lot easier to make realistic inflection if you know how to make analytic languages; just grammaticalize.
